@@ -1,4 +1,4 @@
-const validator = {
+const validator = () => {
   // ...
 };
 
