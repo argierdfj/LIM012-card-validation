@@ -12,7 +12,7 @@
         <h1>Validador de Tarjeta de Crédito Virtual</h1>
     </header>
     <main>
-        <article>
+        <article id="mainScreen">
             <h4>Con esta herramienta puedes verificar si tu Tarjeta de Crédito Virtual asignada es válida para realizar compras online.
             </h4>
             <h3>Validador</h3>
@@ -46,15 +46,11 @@
       </select><br>
             <input type="button" value="Verificar TDC Virtual" id="verifyCreditCard">
         </article>
-        <article>
+        <article id="messageScreen" class="hide">
             <h3>El número de Tarjeta de Crédito Virtual</h3>
-            <p>
-                <span id="hiddenCard"></span>
-            </p>
-            <p>
-                <span id="message"></span>
-                <input type="button" value="?" id="restart">
-            </p>
+            <p id="hiddenCard"></p>
+            <p id="message"></p>
+            <input type="button" value="?" id="restart">
         </article>
     </main>
     <footer></footer>
