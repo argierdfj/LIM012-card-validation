@@ -9,6 +9,6 @@ verifyCreditCard.addEventListener('click', () => {
     if (!creditCardNumber) {
         alert('Debes ingresar tu número de tarjeta para continuar 😒');
         return;
-    };
+    }
     validator.isValid(creditCardNumber);
 });

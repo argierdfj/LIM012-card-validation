@@ -1,24 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <h1>Validador de Tarjeta de Crédito Virtual</h1>
-  <h4>Con esta herramienta puedes verificar si tu Tarjeta de Crédito Virtual asignada es válida para realizar compras online.</h4>
-  <h3>Validador</h3>
-  <p>Número de TDC Virtual</p>
-  <input type="text" placeholder="Ingrese el número de su TDC">
-  <p>Fecha de vencimiento</p>
-  <select><option value="01">Enero</option><option value="02">Febrero</option><option value="03">Marzo</option><option value="04">Abril</option><option value="05">Mayo</option><option value="06">Junio</option><option value="07">Julio</option><option value="08">Agosto</option><option value="09">Septiembre</option><option value="10">Octubre</option><option value="11">Noviembre</option><option value="12">Diciembre</option></select>
-  <br>
-  <select><option value="20">2020</option><option value="21">2021</option><option value="22">2022</option><option value="23">2023</option><option value="24">2024</option><option value="25">2025</option></select><br>
-  <input type="button" value="Verificar TDC Virtual">
-  <body>
-    <header></header>
-    <main></main>
+</head>
+
+<body>
+    <header>
+        <h1>Validador de Tarjeta de Crédito Virtual</h1>
+    </header>
+    <main>
+        <article>
+            <h4>Con esta herramienta puedes verificar si tu Tarjeta de Crédito Virtual asignada es válida para realizar compras online.
+            </h4>
+            <h3>Validador</h3>
+            <p>Número de TDC Virtual</p>
+            <input type="text" placeholder="Ingrese el número de su TDC" id="creditCard" maxlength="16" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+            <p>Código de seguridad</p>
+            <input type="text" placeholder="Ingrese el cvv" maxlength="3" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+            <p>Fecha de vencimiento</p>
+            <select>
+        <option value="01">Enero</option>
+        <option value="02">Febrero</option>
+        <option value="03">Marzo</option>
+        <option value="04">Abril</option>
+        <option value="05">Mayo</option>
+        <option value="06">Junio</option>
+        <option value="07">Julio</option>
+        <option value="08">Agosto</option>
+        <option value="09">Septiembre</option>
+        <option value="10">Octubre</option>
+        <option value="11">Noviembre</option>
+        <option value="12">Diciembre</option>
+      </select>
+            <br>
+            <select>
+        <option value="20">2020</option>
+        <option value="21">2021</option>
+        <option value="22">2022</option>
+        <option value="23">2023</option>
+        <option value="24">2024</option>
+        <option value="25">2025</option>
+      </select><br>
+            <input type="button" value="Verificar TDC Virtual" id="verifyCreditCard">
+        </article>
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
-  </body>
+</body>
+
 </html>
