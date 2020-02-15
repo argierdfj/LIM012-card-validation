@@ -17,9 +17,9 @@
             </h4>
             <h3>Validador</h3>
             <p>Número de TDC Virtual</p>
-            <input type="text" placeholder="Ingrese el número de su TDC" id="creditCard" maxlength="16" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+            <input type="text" class="onkeypress" placeholder="Ingrese el número de su TDC" id="creditCard" maxlength="16" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
             <p>Código de seguridad</p>
-            <input type="text" placeholder="Ingrese el cvv" maxlength="3" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+            <input type="text" class="onkeypress" placeholder="Ingrese el cvv" maxlength="3" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
             <p>Fecha de vencimiento</p>
             <select>
         <option value="01">Enero</option>
@@ -45,6 +45,16 @@
         <option value="25">2025</option>
       </select><br>
             <input type="button" value="Verificar TDC Virtual" id="verifyCreditCard">
+        </article>
+        <article>
+            <h3>El número de Tarjeta de Crédito Virtual</h3>
+            <p>
+                <span id="hiddenCard"></span>
+            </p>
+            <p>
+                <span id="message"></span>
+                <input type="button" value="?" id="restart">
+            </p>
         </article>
     </main>
     <footer></footer>
