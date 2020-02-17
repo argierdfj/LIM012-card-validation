@@ -40,7 +40,9 @@ verifyCreditCard.addEventListener('click', () => {
 restart.addEventListener('click', () => {
     const mainScreen = document.getElementById('mainScreen');
     const messageScreen = document.getElementById('messageScreen');
+    const creditCard = document.getElementById('creditCard');
 
+    creditCard.value = '';
     messageScreen.classList.add('hide');
     mainScreen.classList.remove('hide');
 });
