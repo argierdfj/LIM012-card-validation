@@ -47,14 +47,14 @@ body {
     font-size: 18px;
     line-height: 21px;
     letter-spacing: -0.333333px;
-    color: #000000;
+    color: #0e0d0d;
 }
 
 .cardNumber {
     width: 406px;
     height: 47px;
     background: rgba(196, 196, 196, 0.3);
-    border: 1px solid #000000;
+    border: 1px solid #333333;
     box-sizing: border-box;
     border-radius: 8px;
     font-size: 41px;
@@ -68,6 +68,14 @@ body {
     font-weight: bold;
     font-size: 18px;
     color: #000000;
+}
+
+.month {
+    height: 38px;
+    font-size: 18px;
+    background: rgba(196, 196, 196, 0.3);
+    border: 1px solid #333333;
+    border-radius: 8px;
 }
 
 .footer {
