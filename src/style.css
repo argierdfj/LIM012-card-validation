@@ -9,6 +9,11 @@ header {
     width: 100%;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .validatorTDC {
     font-size: 3em;
     /* em es relativo al tamaño de la lera */
