@@ -64,6 +64,12 @@ body {
     color: #000000;
 }
 
+.expiration {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+}
+
 .footer {
     background-color: #675682;
     height: 70px;
