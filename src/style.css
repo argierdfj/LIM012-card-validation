@@ -78,6 +78,14 @@ body {
     border-radius: 8px;
 }
 
+.year {
+    height: 38px;
+    font-size: 18px;
+    background: rgba(196, 196, 196, 0.3);
+    border: 1px solid #333333;
+    border-radius: 8px;
+}
+
 .footer {
     background-color: #675682;
     height: 70px;
