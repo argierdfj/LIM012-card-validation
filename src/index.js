@@ -32,7 +32,7 @@ verifyCreditCard.addEventListener('click', () => {
         restart.value = `Verificar otra TDC Virtual`;
     } else {
         hiddenCard.innerText = `${hiddenCardNumber}`;
-        message.innerText = `No es válido para realizar compras online`;
+        message.innerText = `No es válido, por favor verifique.`;
         restart.value = `Verificar nuevamente`;
     }
 });

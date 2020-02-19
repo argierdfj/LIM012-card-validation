@@ -9,10 +9,11 @@ header {
     width: 100%;
 }
 
-body {
+
+/* body {
     margin: 0;
     padding: 0;
-}
+} */
 
 .validatorTDC {
     font-size: 3em;
@@ -50,13 +51,13 @@ body {
 }
 
 .cardNumber {
-    width: 406px;
-    height: 47px;
+    width: 350px;
+    height: 46px;
     background: rgba(196, 196, 196, 0.3);
     border: 1px solid #333333;
     box-sizing: border-box;
     border-radius: 8px;
-    font-size: 41px;
+    font-size: 36px;
     text-align: center;
     color: #000000;
 }
@@ -103,13 +104,13 @@ body {
 }
 
 #hiddenCard {
-    width: 406px;
-    height: 47px;
+    width: 350px;
+    height: 46px;
     background: rgba(196, 196, 196, 0.3);
     border: 1px solid #333333;
     box-sizing: border-box;
     border-radius: 8px;
-    font-size: 41px;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
     color: #000000;
