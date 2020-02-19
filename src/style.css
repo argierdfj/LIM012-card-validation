@@ -1,3 +1,55 @@
-.hide{
+/*.hide {
     display: none;
-};
+}*/
+
+header {
+    background-color: #675682;
+    background-image: url(./img/circuitHeader.png);
+    height: 130px;
+    width: 100%;
+}
+
+.validatorTDC {
+    font-size: 3em;
+    /* em es relativo al tamaño de la lera */
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: -0.333333px;
+    color: #333333;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.verify {
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: -0.333333px;
+    color: #333333;
+}
+
+.card {
+    width: 399px;
+    height: 262px;
+    background: rgba(219, 55, 115, 0.9);
+    background-image: url(./img/card.png);
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 29px;
+    background-position: center;
+}
+
+.tdcNumber {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.333333px;
+    color: #000000;
+}
+
+.footer {
+    background-color: #675682;
+    height: 70px;
+    width: 100%;
+}
