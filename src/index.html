@@ -10,18 +10,18 @@
 </head>
 
 <body>
-    <header id="statusBar">
+    <header class="statusBar">
         <img src="src/img/goldbank" alt="">
     </header>
     <h1 class="validatorTDC">Validador de Tarjeta de Crédito Virtual</h1>
 
-    <article id="mainScreen">
+    <article id="mainScreen" class="mainScreen1">
         <h4 class="verify">Verifica si tu tarjeta de cédito virtual es válida</h4>
         <div class="card">
             <p class="tdcNumber">Número de TDC Virtual</p>
             <input type="text" id="creditCard" class="cardNumber" placeholder="Ingrese el número de su TDC" maxlength="16" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
-            <p>Fecha de vencimiento</p>
-            <select>
+            <p class="expiration">Fecha de vencimiento</p>
+            <select class="month">
         <option value="01">Enero</option>
         <option value="02">Febrero</option>
         <option value="03">Marzo</option>
@@ -36,7 +36,7 @@
         <option value="12">Diciembre</option>
       </select>
             <br>
-            <select>
+            <select class="year">
         <option value="20">2020</option>
         <option value="21">2021</option>
         <option value="22">2022</option>
@@ -45,15 +45,15 @@
         <option value="25">2025</option>
       </select><br>
         </div>
-        <input type="button" value="Verificar TDC Virtual" id="verifyCreditCard">
+        <input type="button" id="verifyCreditCard" class="buttonVerifyCreditCard" value="Verificar TDC Virtual">
     </article>
     <article id="messageScreen" class="hide">
-        <h3>El número de Tarjeta de Crédito Virtual</h3>
+        <h3 id="messageTooUser">El número de Tarjeta de Crédito Virtual</h3>
         <p id="hiddenCard"></p>
         <p id="message"></p>
-        <input type="button" value="?" id="restart">
+        <input type="button" class="buttonRestart" value="?" id="restart">
     </article>
-    <footer id="foot"></footer>
+    <footer class="foot"></footer>
     <script src="index.js" type="module"></script>
 </body>
 
