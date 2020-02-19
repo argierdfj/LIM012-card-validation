@@ -9,11 +9,19 @@ header {
     width: 100%;
 }
 
-
-/* body {
+body {
     margin: 0;
     padding: 0;
-} */
+}
+
+.navigation {
+    position: absolute;
+    width: 390px;
+    height: 806px;
+    left: 0px;
+    top: 146px;
+    background: #862F73;
+}
 
 .validatorTDC {
     font-size: 3em;
