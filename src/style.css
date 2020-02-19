@@ -45,7 +45,6 @@ body {
 .tdcNumber {
     font-weight: bold;
     font-size: 18px;
-    line-height: 21px;
     letter-spacing: -0.333333px;
     color: #0e0d0d;
 }
@@ -68,6 +67,7 @@ body {
     font-weight: bold;
     font-size: 18px;
     color: #000000;
+    letter-spacing: -0.333333px;
 }
 
 .month {
@@ -84,6 +84,18 @@ body {
     background: rgba(196, 196, 196, 0.3);
     border: 1px solid #333333;
     border-radius: 8px;
+}
+
+.buttonVerifyCreditCard {
+    width: 170px;
+    height: 70px;
+    background: #00A993;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.333333px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .footer {
