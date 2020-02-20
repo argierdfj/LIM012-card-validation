@@ -14,12 +14,11 @@ body {
     padding: 0;
 }
 
-.navigation {
-    position: absolute;
-    width: 390px;
+.side {
+    width: 160px;
+    float: left;
+    width: 20%;
     height: 806px;
-    left: 0px;
-    top: 146px;
     background: #862F73;
 }
 
