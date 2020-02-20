@@ -1,4 +1,4 @@
-.hide {
+.ocultar {
     display: none;
 }
 
@@ -11,6 +11,16 @@ header {
     width: 100%;
 }
 
+
+/* .headerContent {
+    background-image: url(./img/goldBank.png);
+    position: absolute;
+    width: 50;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 50%;
+} */
+
 body {
     margin: 0;
     padding: 0;
@@ -20,8 +30,7 @@ main {
     display: flex;
 }
 
-#mainScreen,
-.content {
+#mainScreen {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,11 +46,11 @@ main {
 .validatorTDC {
     font-size: 3em;
     /* em es relativo al tamaño de la lera */
-    line-height: 70px;
     text-align: center;
     letter-spacing: -0.333333px;
     color: #333333;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 30px;
 }
 
 .verify {
@@ -64,9 +73,12 @@ main {
 
 .tdcNumber {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 100%;
     letter-spacing: -0.333333px;
     color: #0e0d0d;
+    margin-top: 25%;
+    margin-left: 8%;
+    margin-bottom: 2%;
 }
 
 .cardNumber {
@@ -79,29 +91,35 @@ main {
     font-size: 220%;
     text-align: center;
     color: #000000;
+    margin-left: 8%;
 }
 
 .expiration {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 100%;
     color: #000000;
     letter-spacing: -0.333333px;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-bottom: 2%;
 }
 
 .month {
-    height: 38px;
-    font-size: 18px;
+    height: 15%;
+    font-size: 100%;
     background: rgba(196, 196, 196, 0.3);
     border: 1px solid #333333;
     border-radius: 8px;
+    margin-left: 8%;
 }
 
 .year {
-    height: 38px;
-    font-size: 18px;
+    height: 15%;
+    font-size: 100%;
     background: rgba(196, 196, 196, 0.3);
     border: 1px solid #333333;
     border-radius: 8px;
+    margin-left: 2%;
 }
 
 .buttons {
@@ -114,6 +132,8 @@ main {
     letter-spacing: -0.333333px;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 35px;
+    margin-left: 90px;
 }
 
 #messageTooUser {

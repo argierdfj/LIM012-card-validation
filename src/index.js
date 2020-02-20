@@ -1,9 +1,13 @@
 import validator from './validator.js';
 
-const verifyCreditCard = document.getElementById('verifyCreditCard');
-const restart = document.getElementById('restart');
+const btnVerify = document.getElementById('btnVerify');
+const btnRestart = document.getElementById('btn-restart');
+const mainScreen = document.getElementById('mainScreen');
+const messageScreen = document.getElementById('messageScreen');
+messageScreen.style.display = 'none';
 
-verifyCreditCard.addEventListener('click', () => {
+
+btnVerify.addEventListener('click', () => {
     const creditCard = document.getElementById('creditCard')
     const creditCardNumber = creditCard.value;
     if (!creditCardNumber) {
@@ -14,11 +18,11 @@ verifyCreditCard.addEventListener('click', () => {
         return;
     }
 
-    const mainScreen = document.getElementById('mainScreen');
-    const messageScreen = document.getElementById('messageScreen');
+    mainScreen.style.display = 'none';
+    messageScreen.style.display = 'block';
 
-    mainScreen.classList.add('hide');
-    messageScreen.classList.remove('hide');
+    // mainScreen.classList.add('hide');
+    //messageScreen.classList.remove('hide')
 
     const cardValid = validator.isValid(creditCardNumber);
     const hiddenCardNumber = validator.maskify(creditCardNumber);
@@ -29,15 +33,15 @@ verifyCreditCard.addEventListener('click', () => {
     if (cardValid === true) {
         hiddenCard.innerText = `${hiddenCardNumber}`;
         message.innerText = `Es válido para realizar compras online`;
-        restart.value = `Verificar otra TDC Virtual`;
+        btnRestart.value = `Verificar otra TDC Virtual`;
     } else {
         hiddenCard.innerText = `${hiddenCardNumber}`;
         message.innerText = `No es válido, por favor verifique.`;
-        restart.value = `Verificar nuevamente`;
+        btnRestart.value = `Verificar nuevamente`;
     }
 });
 
-restart.addEventListener('click', () => {
+btnRestart.addEventListener('click', () => {
     const mainScreen = document.getElementById('mainScreen');
     const messageScreen = document.getElementById('messageScreen');
     const creditCard = document.getElementById('creditCard');

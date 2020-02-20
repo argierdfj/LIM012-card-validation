@@ -14,61 +14,48 @@
         <div class="headerContent">
             <img src="src/img/goldbank" alt="">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">opcion 1</a></li>
-                <li><a href="#">opcion 2</a></li>
-                <li><a href="#">opcion 3</a></li>
-                <li><a href="#">opcion 4</a></li>
-                <li><a href="#">opcion 5</a></li>
-            </ul>
-        </nav>
-
     </header>
-
     <main>
         <div class="side"></div>
         <div class="content">
             <h1 class="validatorTDC">Validador de Tarjeta de Crédito Virtual</h1>
-            <article id="mainScreen" class="mainScreen1">
+            <article id="mainScreen">
                 <h4 class="verify">Verifica si tu TDC Virtual es válida</h4>
                 <div class="card">
                     <p class="tdcNumber">TARJETA DE CRÉDITO VIRTUAL</p>
                     <input type="text" id="creditCard" class="cardNumber" placeholder="Ingrese Num. de tarjeta" maxlength="16" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
                     <p class="expiration">FECHA V.</p>
                     <select class="month">
-        <option value="01">Enero</option>
-        <option value="02">Febrero</option>
-        <option value="03">Marzo</option>
-        <option value="04">Abril</option>
-        <option value="05">Mayo</option>
-        <option value="06">Junio</option>
-        <option value="07">Julio</option>
-        <option value="08">Agosto</option>
-        <option value="09">Septiembre</option>
-        <option value="10">Octubre</option>
-        <option value="11">Noviembre</option>
-        <option value="12">Diciembre</option>
-      </select>
-                    <br>
+          <option value="01">Enero</option>
+          <option value="02">Febrero</option>
+          <option value="03">Marzo</option>
+          <option value="04">Abril</option>
+          <option value="05">Mayo</option>
+          <option value="06">Junio</option>
+          <option value="07">Julio</option>
+          <option value="08">Agosto</option>
+          <option value="09">Septiembre</option>
+          <option value="10">Octubre</option>
+          <option value="11">Noviembre</option>
+          <option value="12">Diciembre</option>
+        </select>
                     <select class="year">
-        <option value="20">2020</option>
-        <option value="21">2021</option>
-        <option value="22">2022</option>
-        <option value="23">2023</option>
-        <option value="24">2024</option>
-        <option value="25">2025</option>
-      </select><br>
-                    <input type="button" id="verifyCreditCard" class="buttons" value="Verificar">
-                </div>
+          <option value="20">2020</option>
+          <option value="21">2021</option>
+          <option value="22">2022</option>
+          <option value="23">2023</option>
+          <option value="24">2024</option>
+          <option value="25">2025</option>
+        </select><br>
+                    <input type="button" id="btnVerify" class="buttons" value="Verificar">
             </article>
             <article id="messageScreen" class="hide">
                 <h3 id="messageTooUser">El número de Tarjeta de Crédito Virtual</h3>
                 <p id="hiddenCard"></p>
                 <h3 id="message"></h3>
-                <input type="button" class="buttons" value="?" id="restart">
+                <input type="button" class="buttons" value="?" id="btn-restart">
             </article>
-        </div>
+            </div>
     </main>
     <footer class="foot"></footer>
     <script src="index.js" type="module"></script>
