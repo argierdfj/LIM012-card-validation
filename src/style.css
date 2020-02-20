@@ -25,7 +25,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 8%;
+    margin: auto;
 }
 
 .side {
@@ -70,13 +70,13 @@ main {
 }
 
 .cardNumber {
-    width: 350px;
-    height: 46px;
+    width: 84%;
+    height: 16%;
     background: rgba(196, 196, 196, 0.3);
     border: 1px solid #333333;
     box-sizing: border-box;
     border-radius: 8px;
-    font-size: 36px;
+    font-size: 220%;
     text-align: center;
     color: #000000;
 }
