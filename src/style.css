@@ -5,6 +5,8 @@
 header {
     background-color: #675682;
     background-image: url(./img/circuitHeader.png);
+    /*background: linear-gradient(to left, #00a993 0, #760f5f 100%);
+    transition: opacity .6s;*/
     height: 130px;
     width: 100%;
 }
@@ -23,6 +25,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 8%;
 }
 
 .side {
@@ -57,7 +60,6 @@ main {
     box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
     border-radius: 29px;
     background-position: center;
-    display: inline-block;
 }
 
 .tdcNumber {
@@ -144,6 +146,7 @@ main {
 footer {
     bottom: 0;
     background-color: #675682;
+    background-image: url(./img/circuitFooter.png);
     height: 70px;
     width: 100%;
 }
