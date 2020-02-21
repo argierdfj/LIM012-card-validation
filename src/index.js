@@ -31,11 +31,11 @@ btnVerify.addEventListener('click', () => {
 
     if (cardValid === true) {
         hiddenCard.innerText = `${hiddenCardNumber}`;
-        message.innerText = `Es válido para realizar compras online`;
+        message.innerText = `Es válido para realizar compras online ✔️`;
         btnRestart.value = `Verificar otra TDC Virtual`;
     } else {
         hiddenCard.innerText = `${hiddenCardNumber}`;
-        message.innerText = `No es válido, por favor verifique.`;
+        message.innerText = `No es válido, por favor verifique. ❌`;
         btnRestart.value = `Verificar nuevamente`;
     }
 });
