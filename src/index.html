@@ -2,85 +2,91 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <header class="statusBar">
-        <div class="logo">
-            <img src="./img/goldbank.png" alt="GoldBank">
+  <header class="statusBar">
+    <div class="logo">
+      <img src="./img/goldbank.png" alt="GoldBank" />
+    </div>
+    <nav>
+      <ul>
+        <li>Inicio</li>
+        <li>Banca</li>
+        <li>Ahorros</li>
+        <li>Préstamos</li>
+        <li>Validador de TDC Virtual</li>
+        <li>Buscar</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="side"></div>
+    <div class="content">
+      <h1 class="validatorTDC">Validador de Tarjeta de Crédito Virtual</h1>
+      <article id="mainScreen">
+        <h4 class="verify">Verifica si tu TDC Virtual es válida</h4>
+        <div class="card">
+          <div class="chip">
+            <img src="./img/chip.png" alt="chip" />
+            <img src="./img/goldBank.png" alt="GlobalBank">
+          </div>
+          <p class="tdcNumber">TARJETA DE CRÉDITO VIRTUAL</p>
+          <input type="text" id="creditCard" class="cardNumber" placeholder="Ingrese Num. de tarjeta" maxlength="16"
+            onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" />
+          <p class="expiration">VENCIMIENTO</p>
+          <select class="month">
+            <option value="01">Enero</option>
+            <option value="02">Febrero</option>
+            <option value="03">Marzo</option>
+            <option value="04">Abril</option>
+            <option value="05">Mayo</option>
+            <option value="06">Junio</option>
+            <option value="07">Julio</option>
+            <option value="08">Agosto</option>
+            <option value="09">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+          </select>
+          <select class="year">
+            <option value="20">2020</option>
+            <option value="21">2021</option>
+            <option value="22">2022</option>
+            <option value="23">2023</option>
+            <option value="24">2024</option>
+            <option value="25">2025</option>
+          </select>
         </div>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Banca</li>
-                <li>Ahorros</li>
-                <li>Préstamos</li>
-                <li>Validador de TDC Virtual</li>
-                <li>Buscar</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="side"></div>
-        <div class="content">
-            <h1 class="validatorTDC">Validador de Tarjeta de Crédito Virtual</h1>
-            <article id="mainScreen">
-                <h4 class="verify">Verifica si tu TDC Virtual es válida</h4>
-                <div class="card">
-                    <p class="tdcNumber">TARJETA DE CRÉDITO VIRTUAL</p>
-                    <input type="text" id="creditCard" class="cardNumber" placeholder="Ingrese Num. de tarjeta" maxlength="16" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
-                    <p class="expiration">FECHA V.</p>
-                    <select class="month">
-          <option value="01">Enero</option>
-          <option value="02">Febrero</option>
-          <option value="03">Marzo</option>
-          <option value="04">Abril</option>
-          <option value="05">Mayo</option>
-          <option value="06">Junio</option>
-          <option value="07">Julio</option>
-          <option value="08">Agosto</option>
-          <option value="09">Septiembre</option>
-          <option value="10">Octubre</option>
-          <option value="11">Noviembre</option>
-          <option value="12">Diciembre</option>
-        </select>
-                    <select class="year">
-          <option value="20">2020</option>
-          <option value="21">2021</option>
-          <option value="22">2022</option>
-          <option value="23">2023</option>
-          <option value="24">2024</option>
-          <option value="25">2025</option>
-        </select><br>
-                    <input type="button" id="btnVerify" class="buttons" value="Verificar">
-            </article>
-            <article id="messageScreen" class="hide">
-                <h3 id="messageTooUser">El número de Tarjeta de Crédito Virtual</h3>
-                <p id="hiddenCard"></p>
-                <h3 id="message"></h3>
-                <input type="button" class="buttons" value="?" id="btn-restart">
-            </article>
-            </div>
-    </main>
-    <footer class="foot">
-        <nav>
-            <ul>
-                <li>Seguridad</li>
-                <li>Aviso Legal</li>
-                <li>Políticas de privacidad</li>
-            </ul>
-        </nav>
-        <div class="img-footer"></div>
-        <div class="copyright">
-            <p>&copy;2020 GoldBank Banco Digital S.A.</p>
-        </div>
-    </footer>
-    <script src="index.js" type="module"></script>
+        <input type="button" id="btnVerify" class="buttons" value="Verificar" />
+      </article>
+      <article id="messageScreen" class="hide">
+        <h3 id="messageTooUser">El número de Tarjeta de Crédito Virtual</h3>
+        <p id="hiddenCard"></p>
+        <h3 id="message"></h3>
+        <input type="button" class="buttons" value="?" id="btn-restart" />
+      </article>
+    </div>
+  </main>
+  <footer class="foot">
+    <nav>
+      <ul>
+        <li>Seguridad</li>
+        <li>Aviso Legal</li>
+        <li>Políticas de privacidad</li>
+      </ul>
+    </nav>
+    <div class="img-footer"></div>
+    <div class="copyright">
+      <p>&copy;2020 GoldBank Banco Digital S.A.</p>
+    </div>
+  </footer>
+  <script src="index.js" type="module"></script>
 </body>
 
 </html>

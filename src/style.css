@@ -10,20 +10,20 @@ header {
     width: 20%;
 }
 
-nav {
+header nav {
     width: 80%;
     align-items: flex-end;
     display: grid;
 }
 
-ul {
+header ul {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 0;
 }
 
-li {
+header li {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     list-style: none;
     color: #FDF6E0;
@@ -42,21 +42,6 @@ li:hover {
     border-radius: 4px;
 }
 
-
-/* header::after {
-    background: linear-gradient(to left, #00a993 0, #760f5f 100%);
-    transition: opacity .6s;
-}*/
-
-
-/* .headerContent {
-    background-image: url(./img/goldBank.png);
-    position: absolute;
-    width: 50;
-    background-repeat: no-repeat;
-    height: 50%;
-    width: 50%;
-} */
 
 body {
     margin: 0;
@@ -114,7 +99,6 @@ main {
     font-size: 100%;
     letter-spacing: -0.333333px;
     color: #0e0d0d;
-    margin-top: 25%;
     margin-left: 8%;
     margin-bottom: 2%;
 }
@@ -209,6 +193,23 @@ footer {
     height: 70px;
     width: 100%;
 }
+
+footer nav {
+    width: 80%;
+    align-items: flex-end;
+    display: grid;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer li {
+    list-style: none;
+    color: #FDF6E0;
+}
+
 
 .hide {
     display: none !important;
