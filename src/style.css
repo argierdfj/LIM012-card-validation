@@ -84,6 +84,11 @@ main {
     color: #333333;
 }
 
+@font-face {
+    font-family: halter;
+    src: url(./font/HALTER__.ttf);
+}
+
 .card {
     width: 399px;
     height: 262px;
@@ -97,6 +102,7 @@ main {
 .tdcNumber {
     font-weight: bold;
     font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -0.333333px;
     color: #0e0d0d;
     margin-left: 8%;
@@ -110,15 +116,17 @@ main {
     border: 1px solid #333333;
     box-sizing: border-box;
     border-radius: 8px;
-    font-size: 220%;
+    font-size: 130%;
     text-align: center;
     color: #000000;
     margin-left: 8%;
+    font-family: halter, sans-serif;
 }
 
 .expiration {
     font-weight: bold;
     font-size: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000000;
     letter-spacing: -0.333333px;
     margin-top: 2%;
