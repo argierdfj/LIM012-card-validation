@@ -4,7 +4,6 @@ const btnVerify = document.getElementById('btnVerify');
 const btnRestart = document.getElementById('btn-restart');
 const mainScreen = document.getElementById('mainScreen');
 const messageScreen = document.getElementById('messageScreen');
-messageScreen.style.display = 'none';
 
 
 btnVerify.addEventListener('click', () => {
@@ -18,11 +17,11 @@ btnVerify.addEventListener('click', () => {
         return;
     }
 
-    mainScreen.style.display = 'none';
-    messageScreen.style.display = 'block';
+    // mainScreen.style.display = 'none';
+    // messageScreen.style.display = 'block';
 
-    // mainScreen.classList.add('hide');
-    //messageScreen.classList.remove('hide')
+    mainScreen.classList.add('hide');
+    messageScreen.classList.remove('hide')
 
     const cardValid = validator.isValid(creditCardNumber);
     const hiddenCardNumber = validator.maskify(creditCardNumber);
