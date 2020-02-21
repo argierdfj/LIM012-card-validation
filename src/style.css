@@ -60,15 +60,16 @@ main {
     margin: auto;
 }
 
-.side {
+.sidebar {
     width: 20%;
-    height: 644px;
+    height: 45em;
     background: #862F73;
 }
 
 .validatorTDC {
     font-size: 3em;
     /* em es relativo al tamaño de la lera */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     letter-spacing: -0.333333px;
     color: #333333;
@@ -78,7 +79,7 @@ main {
 
 .verify {
     font-size: 28px;
-    line-height: 33px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     letter-spacing: -0.333333px;
     color: #333333;
@@ -90,7 +91,7 @@ main {
 }
 
 .card {
-    width: 399px;
+    width: 400px;
     height: 262px;
     background: rgba(219, 55, 115, 0.9);
     background-image: url(./img/card.png);
@@ -99,12 +100,33 @@ main {
     background-position: center;
 }
 
+.img-card {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4%;
+}
+
+.chip {
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+
+.logo-card {
+    width: 26%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+
 .tdcNumber {
     font-weight: bold;
     font-size: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -0.333333px;
     color: #0e0d0d;
+    margin-top: 1%;
     margin-left: 8%;
     margin-bottom: 2%;
 }
@@ -116,7 +138,7 @@ main {
     border: 1px solid #333333;
     box-sizing: border-box;
     border-radius: 8px;
-    font-size: 130%;
+    font-size: 1.3em; /*130%*/
     text-align: center;
     color: #000000;
     margin-left: 8%;
@@ -137,6 +159,8 @@ main {
 .month {
     height: 15%;
     font-size: 100%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: rgba(196, 196, 196, 0.3);
     border: 1px solid #333333;
     border-radius: 8px;
@@ -145,7 +169,9 @@ main {
 
 .year {
     height: 15%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 100%;
+    font-weight: bold;
     background: rgba(196, 196, 196, 0.3);
     border: 1px solid #333333;
     border-radius: 8px;
@@ -153,43 +179,45 @@ main {
 }
 
 .buttons {
-    width: 170px;
-    height: 70px;
+    width: 8em;
+    height: 4em;
     background: #00A993;
     border-radius: 30px;
     font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 26px;
     letter-spacing: -0.333333px;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-top: 35px;
-    margin-left: 90px;
+    margin-top: 4%;
+    margin-bottom: 4%;
     border: none;
 }
 
 #messageTooUser {
     font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -0.333333px;
     color: #333333;
     text-align: center;
 }
 
 #hiddenCard {
-    width: 350px;
-    height: 46px;
+    width: 18em;
+    height: 2em;
     background: rgba(196, 196, 196, 0.3);
     border: 1px solid #333333;
-    box-sizing: border-box;
     border-radius: 8px;
-    font-size: 36px;
+    font-family: halter, sans-serif;
+    font-size: 1.6em;
     font-weight: bold;
     text-align: center;
     color: #000000;
-    display: flex;
 }
 
 #message {
     font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -0.333333px;
     color: #333333;
 }
