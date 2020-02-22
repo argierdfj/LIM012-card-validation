@@ -242,6 +242,7 @@ footer {
   background-color: #675682;
   background-image: url(./img/circuitFooter.png);
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   color: #FDF6E0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -291,4 +292,17 @@ footer p {
 
 .hide {
   display: none !important;
+}
+
+
+@media only screen and (max-width:600px) {
+  header nav {
+    display: none;
+  }
+  .sidebar {
+    display: none;
+  }
+  footer {
+    flex-direction: column;
+  }
 }
