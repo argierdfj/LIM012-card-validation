@@ -36,7 +36,7 @@ header li {
   font-weight: bold;
 }
 
-li:hover {
+header li:hover {
   background-color: #00A993;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
@@ -62,8 +62,11 @@ main {
 
 .sidebar {
   width: 20%;
-  height: 45em;
   background: #862F73;
+}
+
+.content {
+  width: 80%;
 }
 
 .validatorTDC {
@@ -191,7 +194,7 @@ main {
   font-size: 1em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: -0.333333px;
-  color: #FFFFFF;
+  color: #FDF6E0;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   white-space: normal;
   margin-top: 4%;
@@ -235,29 +238,55 @@ main {
 
 footer {
   bottom: 0;
+  padding: 3% 0;
   background-color: #675682;
   background-image: url(./img/circuitFooter.png);
-  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  color: #FDF6E0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   width: 100%;
 }
 
 footer nav {
-  width: 80%;
-  align-items: flex-end;
-  display: grid;
+width: 30%;
+margin-left: 10%;
 }
 
 footer ul {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  padding-top: 3%;
+  padding-left: 0%;
 }
 
 footer li {
   list-style: none;
-  color: #FDF6E0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+footer li:hover {
+  cursor: pointer;
+}
+
+.img-footer {
+  width: 16%;
+}
+
+.img-footer img {
+  margin-left: 3%;
+}
+
+.copyright {
+  width: 30%;
+}
+
+footer p {
+  margin-top: 0%;
+  padding-top: 3%;
+}
 
 .hide {
   display: none !important;
