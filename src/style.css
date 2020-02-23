@@ -4,6 +4,10 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+ul {
+  padding-left: 0;
+}
+
 header {
   background-color: #675682;
   background-image: url(./img/circuitHeader.png);
@@ -65,10 +69,31 @@ main {
   color: #FDF6E0;
 }
 
-.sidebar ul li {
-  list-style: none;
+.content .btn-menu {
+  cursor: pointer;
+  color: #333333;
 }
 
+.content .btn-menu span {
+  display: block;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.sidebar ul {
+  margin: 0;
+}
+
+.sidebar ul li {
+  list-style: none;
+  padding: 28px;
+  border-bottom: 1px solid #FDF6E0;
+}
+
+.sidebar ul li:last-child {
+  border-bottom: none;
+}
 
 .content {
   width: 80%;
