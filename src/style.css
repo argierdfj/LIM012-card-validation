@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Graphik-Regular','Gotham SSm A','Gotham SSm B','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'Graphik-Regular', 'Gotham SSm A', 'Gotham SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /*  PARA ELIMINAR FLECHITAS A INPUT NUMBER
@@ -18,7 +18,6 @@ ul {
 }
 
 header {
-  background-color: #675682;
   background-image: url(./img/circuit.png);
   height: 130px;
   width: 100%;
@@ -136,6 +135,8 @@ main {
 }
 
 .card {
+  min-height: 262px;
+  max-width: 400px;
   width: 400px;
   height: 262px;
   background: rgba(219, 55, 115, 0.9);
@@ -167,7 +168,7 @@ main {
 
 .tdcNumber {
   font-weight: bold;
-  font-size: 100%;
+  font-size: 14px;
   letter-spacing: -0.333333px;
   color: #0e0d0d;
   margin-top: 1%;
@@ -196,7 +197,7 @@ main {
 
 .expiration {
   font-weight: bold;
-  font-size: 100%;
+  font-size: 14px;
   color: #0e0d0d;
   letter-spacing: -0.333333px;
   margin-top: 2%;
@@ -206,7 +207,7 @@ main {
 
 .month {
   height: 15%;
-  font-size: 100%;
+  font-size: 0.95em;
   font-weight: bold;
   color: #0e0d0d;
   background: rgba(196, 196, 196, 0.3);
@@ -217,7 +218,7 @@ main {
 
 .year {
   height: 15%;
-  font-size: 100%;
+  font-size: 0.95em;
   font-weight: bold;
   color: #0e0d0d;
   background: rgba(196, 196, 196, 0.3);
@@ -247,7 +248,8 @@ main {
 }
 
 
-#messageTooUser, #message {
+#messageTooUser,
+#message {
   font-size: 1.75em;
   letter-spacing: -0.333333px;
   color: #333333;
@@ -269,32 +271,20 @@ main {
 footer {
   bottom: 0;
   padding: 3% 0;
-  background-color: #675682;
+  background-color: #211E1F;
   background-image: url(./img/circuit.png);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   color: #FDF6E0;
   width: 100%;
 }
 
 footer nav {
-  width: 30%;
-  margin-left: 10%;
 }
 
 footer ul {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 0%;
-  margin-bottom: 0%;
-  padding-top: 3%;
-  padding-left: 0%;
+ 
 }
 
 footer li {
-  list-style: none;
 }
 
 footer li:hover {
@@ -303,12 +293,15 @@ footer li:hover {
 }
 
 .rrss {
-  width: 16%;
+  width: 25%;
+  color: rgb(245, 245, 245);
 }
 
-.rrss img {
+.rrss svg {
   margin-left: 3%;
   cursor: pointer;
+  width: 40px;
+  height: 40px;
 }
 
 .copyright {
@@ -480,14 +473,15 @@ footer p {
     border: none;
   }
 
-  #messageTooUser, #message {
+  #messageTooUser,
+  #message {
     font-size: 1.2em;
     letter-spacing: -0.333333px;
     color: #333333;
     text-align: center;
     margin-left: 2.5%;
     margin-right: 2.5%;
-}
+  }
 
   #hiddenCard {
     width: 80%;
@@ -496,6 +490,5 @@ footer p {
   }
 
   footer {
-    flex-direction: column;
   }
 }
