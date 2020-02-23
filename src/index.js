@@ -49,3 +49,10 @@ btnRestart.addEventListener('click', () => {
   messageScreen.classList.add('hide');
   mainScreen.classList.remove('hide');
 });
+
+const btnMenu = document.getElementById('btnMenu');
+
+btnMenu.addEventListener('click', () => {
+  const sidebar = document.getElementById('sidebar');
+  sidebar.classList.toggle('hideSidebar');
+})

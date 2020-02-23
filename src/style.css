@@ -22,6 +22,7 @@ header {
   height: 130px;
   width: 100%;
   display: flex;
+  border-bottom: 1px solid #767676;
 }
 
 .logo {
@@ -43,18 +44,17 @@ header ul {
 
 header li {
   list-style: none;
-  color: #FDF6E0;
+  color: #767676;
   width: 20%;
   height: 100%;
-  padding: 20px;
   text-align: center;
-  padding: 10px 5px 30px;
+  padding: 10px 5px 10px;
   max-height: 19px;
-  font-weight: bold;
 }
 
 header li:hover {
-  background-color: #00A993;
+  color: #ffffff;
+  background-color: #2AB1A0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   cursor: pointer;
@@ -72,10 +72,15 @@ main {
   margin: auto;
 }
 
-.sidebar {
-  width: 20%;
+#sidebar {
+  width: 300px;
   background: #862F73;
   color: #FDF6E0;
+}
+
+#sidebar.hideSidebar {
+  width: -300px;
+  transition: all 500ms linear;
 }
 
 .content .btn-menu span {
@@ -87,21 +92,21 @@ main {
   margin-top: 1%;
 }
 
-.sidebar ul {
+#sidebar ul {
   margin: 0;
 }
 
-.sidebar ul li {
+#sidebar ul li {
   list-style: none;
   padding: 28px;
   border-bottom: 1px solid #FDF6E0;
 }
 
-.sidebar ul li:last-child {
+#sidebar ul li:last-child {
   border-bottom: none;
 }
 
-.sidebar ul li:hover {
+#sidebar ul li:hover {
   background-color: #00A993;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
@@ -109,7 +114,7 @@ main {
 }
 
 .content {
-  width: 80%;
+  width: 100%;
 }
 
 .validatorTDC {
@@ -270,30 +275,39 @@ main {
 
 footer {
   bottom: 0;
-  padding: 3% 0;
+  padding: 2% 0;
   background-color: #211E1F;
   background-image: url(./img/circuit.png);
   color: #FDF6E0;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-footer nav {
+footer div {
+  width: 33.3%;
+  text-align: center;
+}
+
+footer div:last-child {
+  text-align: right;
 }
 
 footer ul {
- 
+  display: flex;
+  justify-content: center;
 }
 
 footer li {
+  padding: 0 5px;
+  list-style: none;
 }
 
 footer li:hover {
   cursor: pointer;
-  font-weight: bold;
 }
 
 .rrss {
-  width: 25%;
   color: rgb(245, 245, 245);
 }
 
@@ -317,6 +331,11 @@ footer p {
   display: none !important;
 }
 
+@media only screen and (max-width:360px) {
+  .card {
+    min-height: auto;
+  }
+}
 
 @media only screen and (max-width:600px) {
 
@@ -324,7 +343,7 @@ footer p {
     display: none;
   }
 
-  .sidebar {
+  #sidebar {
     display: none;
   }
 
@@ -490,5 +509,27 @@ footer p {
   }
 
   footer {
+    flex-direction: column;
   }
+
+  footer .navFooter {
+    display: contents;
+  }
+
+  footer .rrss {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  footer .copyright {
+    display: block;
+    width: auto;
+  }
+
+  footer .copyright p {
+    width: 100%;
+    text-align: center;
+  }
+
 }
