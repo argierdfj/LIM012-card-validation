@@ -4,13 +4,22 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*  PARA ELIMINAR FLECHITAS A INPUT NUMBER
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; } */
+
 ul {
   padding-left: 0;
 }
 
 header {
   background-color: #675682;
-  background-image: url(./img/circuitHeader.png);
+  background-image: url(./img/circuit.png);
   height: 130px;
   width: 100%;
   display: flex;
@@ -18,6 +27,7 @@ header {
 
 .logo {
   width: 20%;
+  cursor: pointer;
 }
 
 header nav {
@@ -69,16 +79,13 @@ main {
   color: #FDF6E0;
 }
 
-.content .btn-menu {
-  cursor: pointer;
-  color: #333333;
-}
-
 .content .btn-menu span {
-  display: block;
-  width: 40px;
-  text-align: center;
-  font-size: 30px;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 2.5em;
+  color: #333333;
+  margin-left: 2%;
+  margin-top: 1%;
 }
 
 .sidebar ul {
@@ -95,6 +102,13 @@ main {
   border-bottom: none;
 }
 
+.sidebar ul li:hover {
+  background-color: #00A993;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .content {
   width: 80%;
 }
@@ -106,11 +120,11 @@ main {
   letter-spacing: -0.333333px;
   color: #333333;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 30px;
+  margin: 1% 10%;
 }
 
 .verify {
-  font-size: 28px;
+  font-size: 1.75em;
   text-align: center;
   letter-spacing: -0.333333px;
   color: #333333;
@@ -142,13 +156,13 @@ main {
 .chip {
   width: 15%;
   margin-left: 5%;
-  margin-top: 7%;
+  margin-top: 4%;
 }
 
 .logo-card {
-  width: 26%;
-  margin-right: 5%;
-  margin-top: 3%;
+  width: 20%;
+  margin-right: 10%;
+  margin-top: 5%;
 }
 
 .tdcNumber {
@@ -175,7 +189,7 @@ main {
   font-size: 1.3em;
   /*130%*/
   text-align: center;
-  color: #000000;
+  color: #0e0d0d;
   margin-left: 8%;
   font-family: halter, sans-serif;
 }
@@ -183,7 +197,7 @@ main {
 .expiration {
   font-weight: bold;
   font-size: 100%;
-  color: #000000;
+  color: #0e0d0d;
   letter-spacing: -0.333333px;
   margin-top: 2%;
   margin-left: 8%;
@@ -194,6 +208,7 @@ main {
   height: 15%;
   font-size: 100%;
   font-weight: bold;
+  color: #0e0d0d;
   background: rgba(196, 196, 196, 0.3);
   border: 1px solid #333333;
   border-radius: 8px;
@@ -204,6 +219,7 @@ main {
   height: 15%;
   font-size: 100%;
   font-weight: bold;
+  color: #0e0d0d;
   background: rgba(196, 196, 196, 0.3);
   border: 1px solid #333333;
   border-radius: 8px;
@@ -228,12 +244,11 @@ main {
 .buttons:hover {
   background-color: #675682;
   cursor: pointer;
-  font-weight: bold;
 }
 
 
-#messageTooUser {
-  font-size: 30px;
+#messageTooUser, #message {
+  font-size: 1.75em;
   letter-spacing: -0.333333px;
   color: #333333;
   text-align: center;
@@ -248,20 +263,14 @@ main {
   font-size: 1.6em;
   font-weight: bold;
   text-align: center;
-  color: #000000;
-}
-
-#message {
-  font-size: 30px;
-  letter-spacing: -0.333333px;
-  color: #333333;
+  color: #0e0d0d;
 }
 
 footer {
   bottom: 0;
   padding: 3% 0;
   background-color: #675682;
-  background-image: url(./img/circuitFooter.png);
+  background-image: url(./img/circuit.png);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -270,8 +279,8 @@ footer {
 }
 
 footer nav {
-width: 30%;
-margin-left: 10%;
+  width: 30%;
+  margin-left: 10%;
 }
 
 footer ul {
@@ -293,12 +302,13 @@ footer li:hover {
   font-weight: bold;
 }
 
-.img-footer {
+.rrss {
   width: 16%;
 }
 
-.img-footer img {
+.rrss img {
   margin-left: 3%;
+  cursor: pointer;
 }
 
 .copyright {
@@ -316,12 +326,175 @@ footer p {
 
 
 @media only screen and (max-width:600px) {
+
   header nav {
     display: none;
   }
+
   .sidebar {
     display: none;
   }
+
+  .content {
+    width: 100%;
+  }
+
+  header {
+    background-color: #675682;
+    background-image: url(./img/circuit.png);
+    width: 100%;
+    height: 90px;
+    display: flex;
+  }
+
+  .logo img {
+    height: 80px;
+    margin-top: 4px;
+    cursor: pointer;
+  }
+
+  .content .btn-menu span {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #333333;
+    margin-left: 2%;
+    margin-top: 1%;
+  }
+
+  .validatorTDC {
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: -0.333333px;
+    color: #333333;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0% 10%;
+  }
+
+  .verify {
+    font-size: 1.2em;
+    text-align: center;
+    letter-spacing: -0.333333px;
+    color: #333333;
+  }
+
+  .card {
+    width: 85%;
+    height: 200px;
+    background: rgba(219, 55, 115, 0.9);
+    background-image: url(./img/card.png);
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    background-position: center;
+  }
+
+  .img-card {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 4%;
+  }
+
+  .chip {
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 4%;
+  }
+
+  .logo-card {
+    width: 18%;
+    margin-right: 4%;
+    margin-top: 5%;
+  }
+
+  .tdcNumber {
+    font-weight: bold;
+    font-size: 70%;
+    letter-spacing: -0.333333px;
+    color: #0e0d0d;
+    margin-top: 1%;
+    margin-left: 9%;
+    margin-bottom: 2%;
+  }
+
+  .cardNumber {
+    width: 80%;
+    height: 16%;
+    background: rgba(196, 196, 196, 0.3);
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 1em;
+    text-align: center;
+    color: #0e0d0d;
+    margin-left: 9%;
+    font-family: halter, sans-serif;
+  }
+
+  .expiration {
+    font-weight: bold;
+    font-size: 70%;
+    color: #0e0d0d;
+    letter-spacing: -0.333333px;
+    margin-top: 2%;
+    margin-left: 9%;
+    margin-bottom: 2%;
+  }
+
+  .month {
+    height: 15%;
+    font-size: 80%;
+    font-weight: bold;
+    color: #0e0d0d;
+    background: rgba(196, 196, 196, 0.3);
+    border: 1px solid #333333;
+    border-radius: 8px;
+    margin-left: 9%;
+  }
+
+  .year {
+    height: 15%;
+    font-size: 80%;
+    font-weight: bold;
+    color: #0e0d0d;
+    background: rgba(196, 196, 196, 0.3);
+    border: 1px solid #333333;
+    border-radius: 8px;
+    margin-left: 2%;
+  }
+
+  .buttons {
+    width: 26%;
+    height: 3.6em;
+    background: #00A993;
+    border-radius: 30px;
+    font-size: 80%;
+    letter-spacing: -0.333333px;
+    color: #FDF6E0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    white-space: normal;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border: none;
+  }
+
+  #messageTooUser, #message {
+    font-size: 1.2em;
+    letter-spacing: -0.333333px;
+    color: #333333;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+  #hiddenCard {
+    width: 80%;
+    font-size: 1.1em;
+    overflow: scroll;
+  }
+
   footer {
     flex-direction: column;
   }
