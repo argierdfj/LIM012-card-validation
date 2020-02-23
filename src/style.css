@@ -74,20 +74,19 @@ main {
 
 #sidebar {
   width: 300px;
-  background: #862F73;
-  color: #FDF6E0;
+  background: #9A2D86;
+  color: #F5F5F5;
 }
 
 #sidebar.hideSidebar {
-  width: -300px;
-  transition: all 500ms linear;
+  display: none;
 }
 
 .content .btn-menu span {
   display: inline-block;
   cursor: pointer;
   font-size: 2.5em;
-  color: #333333;
+  color: #554F4F;
   margin-left: 2%;
   margin-top: 1%;
 }
@@ -99,7 +98,7 @@ main {
 #sidebar ul li {
   list-style: none;
   padding: 28px;
-  border-bottom: 1px solid #FDF6E0;
+  border-bottom: 1px solid #F5F5F5;
 }
 
 #sidebar ul li:last-child {
@@ -122,7 +121,7 @@ main {
   /* em es relativo al tamaño de la lera */
   text-align: center;
   letter-spacing: -0.333333px;
-  color: #333333;
+  color: #554F4F;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 1% 10%;
 }
@@ -131,7 +130,7 @@ main {
   font-size: 1.75em;
   text-align: center;
   letter-spacing: -0.333333px;
-  color: #333333;
+  color: #554F4F;
 }
 
 @font-face {
@@ -175,7 +174,7 @@ main {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: -0.333333px;
-  color: #0e0d0d;
+  color: #131112;
   margin-top: 1%;
   margin-left: 8%;
   margin-bottom: 2%;
@@ -189,13 +188,13 @@ main {
   width: 84%;
   height: 16%;
   background: rgba(196, 196, 196, 0.3);
-  border: 1px solid #333333;
+  border: 1px solid #554F4F;
   box-sizing: border-box;
   border-radius: 8px;
   font-size: 1.3em;
   /*130%*/
   text-align: center;
-  color: #0e0d0d;
+  color: #131112;
   margin-left: 8%;
   font-family: halter, sans-serif;
 }
@@ -203,7 +202,7 @@ main {
 .expiration {
   font-weight: bold;
   font-size: 14px;
-  color: #0e0d0d;
+  color: #131112;
   letter-spacing: -0.333333px;
   margin-top: 2%;
   margin-left: 8%;
@@ -214,9 +213,9 @@ main {
   height: 15%;
   font-size: 0.95em;
   font-weight: bold;
-  color: #0e0d0d;
+  color: #131112;
   background: rgba(196, 196, 196, 0.3);
-  border: 1px solid #333333;
+  border: 1px solid #554F4F;
   border-radius: 8px;
   margin-left: 8%;
 }
@@ -225,9 +224,9 @@ main {
   height: 15%;
   font-size: 0.95em;
   font-weight: bold;
-  color: #0e0d0d;
+  color: #131112;
   background: rgba(196, 196, 196, 0.3);
-  border: 1px solid #333333;
+  border: 1px solid #554F4F;
   border-radius: 8px;
   margin-left: 2%;
 }
@@ -239,7 +238,7 @@ main {
   border-radius: 30px;
   font-size: 1em;
   letter-spacing: -0.333333px;
-  color: #FDF6E0;
+  color: #F5F5F5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   white-space: normal;
   margin-top: 4%;
@@ -257,20 +256,20 @@ main {
 #message {
   font-size: 1.75em;
   letter-spacing: -0.333333px;
-  color: #333333;
+  color: #554F4F;
   text-align: center;
 }
 
 #hiddenCard {
   padding: 1%;
   background: rgba(196, 196, 196, 0.3);
-  border: 1px solid #333333;
+  border: 1px solid #554F4F;
   border-radius: 8px;
   font-family: halter, sans-serif;
   font-size: 1.6em;
   font-weight: bold;
   text-align: center;
-  color: #0e0d0d;
+  color: #131112;
 }
 
 footer {
@@ -278,7 +277,7 @@ footer {
   padding: 2% 0;
   background-color: #211E1F;
   background-image: url(./img/circuit.png);
-  color: #FDF6E0;
+  color: #F5F5F5;
   width: 100%;
   display: flex;
   align-items: center;
@@ -369,7 +368,7 @@ footer p {
     display: inline-block;
     cursor: pointer;
     font-size: 1.5em;
-    color: #333333;
+    color: #554F4F;
     margin-left: 2%;
     margin-top: 1%;
   }
@@ -378,7 +377,7 @@ footer p {
     font-size: 2em;
     text-align: center;
     letter-spacing: -0.333333px;
-    color: #333333;
+    color: #554F4F;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0% 10%;
   }
@@ -387,7 +386,7 @@ footer p {
     font-size: 1.2em;
     text-align: center;
     letter-spacing: -0.333333px;
-    color: #333333;
+    color: #554F4F;
   }
 
   .card {
@@ -425,7 +424,7 @@ footer p {
     font-weight: bold;
     font-size: 70%;
     letter-spacing: -0.333333px;
-    color: #0e0d0d;
+    color: #131112;
     margin-top: 1%;
     margin-left: 9%;
     margin-bottom: 2%;
@@ -435,12 +434,12 @@ footer p {
     width: 80%;
     height: 16%;
     background: rgba(196, 196, 196, 0.3);
-    border: 1px solid #333333;
+    border: 1px solid #554F4F;
     box-sizing: border-box;
     border-radius: 8px;
     font-size: 1em;
     text-align: center;
-    color: #0e0d0d;
+    color: #131112;
     margin-left: 9%;
     font-family: halter, sans-serif;
   }
@@ -448,7 +447,7 @@ footer p {
   .expiration {
     font-weight: bold;
     font-size: 70%;
-    color: #0e0d0d;
+    color: #131112;
     letter-spacing: -0.333333px;
     margin-top: 2%;
     margin-left: 9%;
@@ -459,9 +458,9 @@ footer p {
     height: 15%;
     font-size: 80%;
     font-weight: bold;
-    color: #0e0d0d;
+    color: #131112;
     background: rgba(196, 196, 196, 0.3);
-    border: 1px solid #333333;
+    border: 1px solid #554F4F;
     border-radius: 8px;
     margin-left: 9%;
   }
@@ -470,9 +469,9 @@ footer p {
     height: 15%;
     font-size: 80%;
     font-weight: bold;
-    color: #0e0d0d;
+    color: #131112;
     background: rgba(196, 196, 196, 0.3);
-    border: 1px solid #333333;
+    border: 1px solid #554F4F;
     border-radius: 8px;
     margin-left: 2%;
   }
@@ -484,7 +483,7 @@ footer p {
     border-radius: 30px;
     font-size: 80%;
     letter-spacing: -0.333333px;
-    color: #FDF6E0;
+    color: #F5F5F5;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     white-space: normal;
     margin-top: 8%;
@@ -496,7 +495,7 @@ footer p {
   #message {
     font-size: 1.2em;
     letter-spacing: -0.333333px;
-    color: #333333;
+    color: #554F4F;
     text-align: center;
     margin-left: 2.5%;
     margin-right: 2.5%;
