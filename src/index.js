@@ -50,6 +50,7 @@ btnRestart.addEventListener('click', () => {
   mainScreen.classList.remove('hide');
 });
 
+// evento barra lateral
 const btnMenu = document.getElementById('btnMenu');
 
 btnMenu.addEventListener('click', () => {
