@@ -16,7 +16,7 @@ Además evita errores al vincular el número generado automáticamente por el si
 
 Le brinda al usuario completa libertad y autonomía al gestionar su tarjeta de credito en la página web.
 
-**Luego colocarás la foto de tu primer prototipo en papel.**
+![Imagen final del proyecto](./img_readme/prototipo.jpg)
 
 Mi primer enfoque en la solución de éste problema se desviaba un poco de la temática principal así que me sugirieron que priorizara el objetivo del proyecto, es así que cambié el la visión que tenía inicialmente y opté por aplicar la validación a tarjetas de credito virtuales.
 
