@@ -30,3 +30,5 @@ Después de pasar mi prototipo en papel a la herramienta Figma me sugirieron que
 ![Prototipo final](./img_readme/valid.png)
 
 ![Prototipo final](./img_readme/invalid.png)
+
+Figma [enlace](https://www.figma.com/file/6EzsnsJ1XO2riurFfKPAIW/cardValid?node-id=173%3A1)
