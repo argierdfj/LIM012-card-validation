@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Graphik-Regular', 'Gotham SSm A', 'Gotham SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: museoSans, sans-serif;
 }
 
 /*  PARA ELIMINAR FLECHITAS A INPUT NUMBER
@@ -22,12 +22,18 @@ header {
   height: 130px;
   width: 100%;
   display: flex;
-  border-bottom: 1px solid #767676;
+  border-bottom: 1px solid #76767680;
 }
 
 .logo {
   width: 20%;
   cursor: pointer;
+}
+
+.logo img {
+  width: 150px;
+  height: 130px;
+  margin-top: 4px;
 }
 
 header nav {
@@ -106,7 +112,7 @@ main {
 #sidebar ul li {
   list-style: none;
   padding: 28px;
-  border-bottom: 1px solid #F5F5F5;
+  border-bottom: 1px solid #f5f5f56b;
 }
 
 #sidebar ul li:last-child {
@@ -145,6 +151,12 @@ main {
   font-family: halter;
   src: url(./font/HALTER__.ttf);
 }
+
+@font-face {
+  font-family: museoSans;
+  src: url(./font/MuseoSans_500.otf);
+}
+
 
 .card {
   min-height: 262px;
@@ -200,7 +212,6 @@ main {
   box-sizing: border-box;
   border-radius: 8px;
   font-size: 1.3em;
-  /*130%*/
   text-align: center;
   color: #131112;
   margin-left: 8%;
@@ -245,6 +256,7 @@ main {
   background: #00A993;
   border-radius: 30px;
   font-size: 1em;
+  font-family: museoSans, sans-serif;
   letter-spacing: -0.333333px;
   color: #F5F5F5;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -252,6 +264,7 @@ main {
   margin-top: 4%;
   margin-bottom: 4%;
   border: none;
+  padding: 0;
 }
 
 .buttons:hover {
@@ -263,9 +276,9 @@ main {
 #messageTooUser,
 #message {
   font-size: 1.75em;
+  text-align: center;
   letter-spacing: -0.333333px;
   color: #554F4F;
-  text-align: center;
 }
 
 #hiddenCard {
@@ -359,7 +372,6 @@ footer p {
   }
 
   header {
-    background-color: #675682;
     background-image: url(./img/circuit.png);
     width: 100%;
     height: 90px;
@@ -370,6 +382,7 @@ footer p {
     height: 80px;
     margin-top: 4px;
     cursor: pointer;
+    width: auto;
   }
 
   .content .btn-menu span {
