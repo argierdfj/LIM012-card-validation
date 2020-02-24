@@ -20,6 +20,8 @@ Le brinda al usuario completa libertad y autonomía al gestionar su tarjeta de c
 
 Mi primer enfoque en la solución de éste problema se desviaba un poco de la temática principal así que me sugirieron que priorizara el objetivo del proyecto, es así que cambié el la visión que tenía inicialmente y opté por aplicar la validación a tarjetas de credito virtuales.
 
+Empecé mi primer prototipo en papel e ideé 4 pantallas, una para ir al validador, otra para escribir el numero de tarjeta a validar y otras 2 para el respectivo mensaje de valido en invalido ocultando todos los números excepto los últimos 4, sin embargo me indicaron que la primera pantalla era redundante pues estaba poniendo una capa innecesaria para lo que el usuario necesitaba solucionar, entonces siguiendo esta oportuna recomendación, la primera pantalla no la implementé en el producto final.
+
 Al empezar a trabajar en el código de validación no estaba del todo organizada, tenía muchas a las que debía poner atención pero no sabía por donde empezar, así que otra sugerencia realmente útil fue que desglozara el problema que estaba resolviendo en ese momento en una lista de tareas, que en un principio contaba con 9 puntos a realizar y al final terminó alargándose a alrededor de 24 puntos.
 
 Después de pasar mi prototipo en papel a la herramienta Figma me sugirieron que el diseño de mis pantallas no debía parecer una típica presentación con diapositivas, así que en varias oportunidades tuve que cambiar el diseño en ésta herramienta, hasta llegar a un prototipo final que sí se adecuaba más a lo que yo quería presentar.
